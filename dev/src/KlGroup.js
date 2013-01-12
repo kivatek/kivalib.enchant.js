@@ -1,4 +1,4 @@
-var KlGroup = Class.create(Group, {
+KlGroup = enchant.Class.create(enchant.Group, {
 	initialize: function(type) {
 		Group.call(this);
 	},
