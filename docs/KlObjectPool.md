@@ -1,11 +1,9 @@
-SimpleObjectPool
-================
+# KlObjectPool
 
 オブジェクトを最初にまとめて生成しアプリケーション実行時には再利用することでインスタンス生成のコストを抑えます。  
 例えばシューティングゲームのように大量の敵が登場したり消滅したりを繰り返すようなケースで利用します。
 
-使用事例
---------
+## ■ 使用事例
 
     enchant();
 
@@ -16,9 +14,9 @@ SimpleObjectPool
         }
     });
 
-    EnemySpritePool = enchant.Class.create(SimpleObjectPool, {
+    EnemySpritePool = enchant.Class.create(KlObjectPool, {
         initialize: function(limit) {
-            SimpleObjectPool.call(this, limit);
+            KlObjectPool.call(this, limit);
         },
         builder: function() {
             return new EnemySprite();
