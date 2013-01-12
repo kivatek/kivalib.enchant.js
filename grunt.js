@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 			dist: {
 				// 結合元となるファイル
 				src: [
-					'dev/src/SimpleObjectPool.js'
+					'dev/src/KlGroup.js',
+					'dev/src/KlObjectPool.js'
 				],
 				// 結合先のファイル名
 				dest: 'kivalib.enchant.js'
@@ -22,7 +23,8 @@ module.exports = function(grunt) {
 			dist: {
 				// 結合元となるファイル
 				src: [
-					'dev/src/SimpleObjectPool.js'
+					'dev/src/KlGroup.js',
+					'dev/src/KlObjectPool.js'
 				],
 				// 結合先のファイル名
 				dest: 'kivalib.enchant.min.js'

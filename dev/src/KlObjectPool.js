@@ -1,4 +1,4 @@
-SimpleObjectPool = enchant.Class.create({
+KlObjectPool = enchant.Class.create({
 	initialize: function(limit) {
 		this.array = [];
 		for (var n = 0; n < limit; n++) {
