@@ -1,5 +1,5 @@
-KlGroup = enchant.Class.create(enchant.Group, {
-	initialize: function(type) {
+var KlGroup = enchant.Class.create(enchant.Group, {
+	initialize: function() {
 		Group.call(this);
 	},
 	removeAllChildren: function() {
@@ -9,7 +9,7 @@ KlGroup = enchant.Class.create(enchant.Group, {
 	}
 });
 
-KlObjectPool = enchant.Class.create({
+var KlObjectPool = enchant.Class.create({
 	initialize: function(limit) {
 		this.array = [];
 		for (var n = 0; n < limit; n++) {
@@ -44,3 +44,56 @@ KlObjectPool = enchant.Class.create({
 	}
 });
 
+
+var ABS = Math.abs;
+var CEIL = Math.ceil;
+var COS = Math.cos;
+var FLOOR = Math.floor;
+var MAX = Math.max;
+var MIN = Math.min;
+var RANDOM = Math.random;
+var SQRT = Math.sqrt;
+var M_PI = Math.PI;
+
+function degToRad(val)
+{
+    return ((val) / 180.0 * M_PI);
+}
+
+function radToDeg(val)
+{
+    return ((val) * (180.0 / M_PI));
+}
+
+function dotProduct(ax, ay, bx, by)
+{
+    return (ax * bx) - (ay * by);
+}
+
+function crossProduct(ax, ay, bx, by)
+{
+    return (ax * by) - (ay * bx);
+}
+
+
+var Vector2 = enchant.Class.create({
+	initialize: function(x, y) {
+		this.x = x;
+		this.y = y;
+	},
+	add: function(vec) {
+		this.x += vec.x;
+		this.y += vec.y;
+		return this;
+	},
+	sub: function(vec) {
+		this.x -= vec.x;
+		this.y -= vec.y;
+		return this;
+	},
+	normalize: function() {
+	},
+	debugPrint: function() {
+		console.log('x:' + this.x + ', y:' + this.y);
+	}
+});

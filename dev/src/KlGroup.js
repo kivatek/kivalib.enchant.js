@@ -1,5 +1,5 @@
-KlGroup = enchant.Class.create(enchant.Group, {
-	initialize: function(type) {
+var KlGroup = enchant.Class.create(enchant.Group, {
+	initialize: function() {
 		Group.call(this);
 	},
 	removeAllChildren: function() {
