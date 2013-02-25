@@ -1,0 +1,17 @@
+{
+  "name": "kivalib.enchant",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.1.1"
+  },
+  "devroot": "dev/src",
+  "uglified": "./<%= pkg.name %>.min.js",
+  "sourceFiles": [
+    "<%= pkg.devroot %>/KlGroup.js",
+    "<%= pkg.devroot %>/KlObjectPool.js",
+    "<%= pkg.devroot %>/GameMath.js",
+    "<%= pkg.devroot %>/Vector2.js"
+  ]
+}
