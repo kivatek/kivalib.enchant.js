@@ -11,6 +11,8 @@
   "sourceFiles": [
     "<%= pkg.devroot %>/KlGroup.js",
     "<%= pkg.devroot %>/KlObjectPool.js",
+    "<%= pkg.devroot %>/KlIgniter.js",
+    "<%= pkg.devroot %>/KlUpdater.js",
     "<%= pkg.devroot %>/GameMath.js",
     "<%= pkg.devroot %>/Vector2.js"
   ]
